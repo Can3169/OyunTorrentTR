@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>OyunTorrentTR</title>
+  <meta name="google-site-verification" content="UuOVDZnrRMoPIOt5lWM3MJyaW1BGob8QX0smZbg1rfM" />
+  <meta name="description" content="OyunTorrentTR ile popüler oyunların torrent dosyalarını güvenli ve hızlı şekilde indir.">
+  <meta name="keywords" content="torrent, oyun indir, spider-man torrent, uTorrent, watch dogs torrent">
+  <meta name="author" content="OyunTorrentTR">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/71/Bittorrent_Protocol_Diagram.png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +17,6 @@
       padding: 20px;
       text-align: center;
     }
-
     .button {
       background-color: #4CAF50;
       color: white;
@@ -25,7 +29,6 @@
       margin: 20px 0;
       cursor: pointer;
     }
-
     .section {
       background: white;
       padding: 30px;
@@ -34,63 +37,27 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin: 10px 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: #2a4cff;
-    }
-
-    .layout-wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .side-box {
-      width: 200px;
-      background-color: #ffffff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      font-size: 14px;
-      color: #333;
-    }
-
-    .main-content {
-      max-width: 700px;
-      flex: 1;
-    }
-
-    @media screen and (max-width: 900px) {
-      .layout-wrapper {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .side-box {
-        width: 90%;
-      }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
-<!-- Hesap Formu -->
+<!-- Kapak Görseli -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Bittorrent_Protocol_Diagram.png" alt="Torrent Kapak Görseli">
+
+<div class="section">
+  <h1>OyunTorrentTR</h1>
+  <p><a href="#torrent-info">🔽 Torrent Nedir? Bilgi Al</a></p>
+</div>
+
+<!-- Giriş -->
 <div class="section">
   <h2>🔐 Giriş Yap / Kayıt Ol</h2>
-  <form onsubmit="alert('Bu sadece demo formudur. Gerçek işlem yapılmaz.'); return false;">
+  <form onsubmit="alert('Demo form! Gerçek işlem yapılmaz.'); return false;">
     <label for="username">👤 Kullanıcı Adı:</label><br>
     <input type="text" id="username" name="username" required><br><br>
     <label for="password">🔒 Şifre:</label><br>
@@ -100,100 +67,33 @@
   </form>
 </div>
 
-<!-- Torrent Butonu -->
+<!-- Oyunlar -->
 <button class="button" onclick="toggleTorrentList()">🎮 Torrentleri Göster</button>
-
-<!-- Torrent Listesi -->
 <div id="torrentList" style="display: none;">
   <div class="section">
     <h2>🎮 Oyun Torrentleri</h2>
     <ul>
-      <li>
-        <a href="https://drive.google.com/file/d/1k7Oa1lhcMtTAplwh-MBHQEPKVjcVuNTh/view?usp=sharing" target="_blank">
-          🌊 Subnautica: Below Zero - Torrent İndir (Google Drive)
-        </a>
-      </li>
-      <li>
-        <a href="https://drive.google.com/file/d/1yl4inHc6wtyho8xvgEGPkMK4nhFp29zF/view?usp=sharing" target="_blank">
-          🎮 The Last of Us Part II - Torrent İndir (Google Drive)
-        </a>
-      </li>
-    
-<li>
-  <a href="https://drive.google.com/file/d/15epPMpvChAB3aAuUfrtj2TGPHwgy2xyt/view?usp=sharing" target="_blank">
-    🕶️ Watch Dogs 2 - Torrent İndir (Google Drive)
-  </a>
-</li>
-
-    
-<li>
-  <a href="https://drive.google.com/file/d/1hGuZXNQIL1fiphT8lFKxhbTwrcUieYTi/view?usp=sharing" target="_blank">
-    🕷️ Spider-Man: Miles Morales - Torrent İndir (Google Drive)
-  </a>
-</li>
-
+      <li><a href="#">🌊 Subnautica: Below Zero</a></li>
+      <li><a href="#">🎮 The Last of Us Part II</a></li>
+      <li><a href="#">🕶️ Watch Dogs 2</a></li>
+      <li><a href="#">🕷️ Spider-Man: Miles Morales</a></li>
     </ul>
   </div>
 </div>
 
-<!-- YouTube Video -->
+<!-- Video -->
 <div class="section">
-  <h2>🎥 uTorrent Kurulumu Video Anlatım</h2>
-  <iframe width="100%" height="400"
-    src="https://www.youtube.com/embed/aLyruj5bhS4"
-    title="uTorrent Kurulum Videosu"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-  <p>Bu videoda uTorrent programının nasıl kurulacağı ve torrent dosyalarının nasıl indirileceği detaylıca anlatılıyor.</p>
+  <h2>🎥 uTorrent Kurulumu</h2>
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/aLyruj5bhS4" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<!-- Bilgilendirme -->
-<div class="section">
-  <h2>💡 Torrent Hakkında Bilgilendirme</h2>
-  <p><strong>Torrent nedir?</strong><br>
-  Torrent, büyük dosyaları küçük parçalara ayırarak çok sayıda kullanıcı arasında paylaşmayı sağlayan bir sistemdir.</p>
-  <p><strong>uTorrent ne işe yarar?</strong><br>
-  Torrent dosyalarını indirmek ve yönetmek için kullanılır.</p>
-  <p><strong>Yasal Uyarı:</strong><br>
-  Telif hakkı içeren içeriklerin izinsiz indirilmesi yasal sorunlara yol açabilir.</p>
-  <p><strong>Güvenlik:</strong><br>
-  Sadece güvenilir kaynaklardan torrent indirin.</p>
-  <p><strong>VPN Kullanımı:</strong><br>
-  Torrent kullanırken gizliliğinizi korumak için VPN önerilir.</p>
-</div>
-
-<!-- Forum -->
-<div class="section">
-  <h2>💬 Ziyaretçi Yorumları (Forum)</h2>
-  <form onsubmit="alert('Bu sadece örnek forumdur. Mesajınız kaydedilmez.'); return false;">
-    <label for="name">👤 İsim:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="comment">💬 Mesaj:</label><br>
-    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-    <button class="button" type="submit">Gönder</button>
-  </form>
-  <div style="text-align: left; margin-top: 30px;">
-    <p>🗨️ <strong>Ahmet:</strong> Torrent çok hızlıydı, teşekkürler!</p>
-    <p>🗨️ <strong>Elif:</strong> VPN kullanmayı unutmayın arkadaşlar :)</p>
-    <p>🗨️ <strong>Mehmet:</strong> Site sade ve çok açıklayıcı olmuş. Eline sağlık!</p>
-  </div>
-</div>
-
-<!-- Yan Kutular -->
-<div class="layout-wrapper">
-  <div class="side-box">
-    <strong>💡 Bilgi:</strong><br>
-    Torrent dosyaları büyük verileri parçalara ayırarak dağıtır.<br><br>
-    <strong>⚠️ Dikkat:</strong><br>
-    Lütfen yalnızca güvenilir kaynaklardan indir.
-  </div>
-  <div class="side-box">
-    <strong>📦 Gelişmiş Bilgi:</strong><br>
-    Torrent istemcileri açık kaldıkça dosya paylaşımı sürer.<br><br>
-    <strong>🌐 VPN:</strong><br>
-    Gizliliğiniz için torrent kullanırken VPN önerilir.
-  </div>
+<!-- Bilgi -->
+<div class="section" id="torrent-info">
+  <h2>📚 Torrent Nedir?</h2>
+  <p><strong>Torrent</strong>, büyük dosyaları parça parça indirip dağıtan sistemdir.</p>
+  <p><strong>.torrent</strong> dosyaları hangi parçaların nereden alınacağını gösterir.</p>
+  <p><strong>Seed:</strong> Tüm dosyayı paylaşan kişi. <strong>Peer:</strong> İndirip paylaşan kişi.</p>
+  <p><strong>VPN</strong> ile gizlilik sağlanabilir.</p>
 </div>
 
 <script>
